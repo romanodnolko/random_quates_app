@@ -72,7 +72,13 @@ h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
 }
-
+.favorite-icon {
+  font-size: 30px;
+  color: orange;
+  border-color: #000000;
+  vertical-align: middle;
+  cursor: pointer;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
