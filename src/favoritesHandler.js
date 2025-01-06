@@ -3,6 +3,13 @@ function toggleFavoriteIcon(isFavorite, el) {
   el.classList.toggle('fa-regular', !isFavorite);
 }
 
+function showToggleFavoriteBtn(btn) {
+  btn.style.display = 'inline-block';
+}
+function hideToggleFavoriteBtn(btn) {
+  btn.style.display = 'none';
+}
+
 function showFavoriteCard(quote, author, container) {
   const favoriteCard = document.createElement('div');
   favoriteCard.classList.add('favorite-card');
@@ -21,4 +28,4 @@ function hideFavoriteCard(quote) {
   });
 }
 
-export { toggleFavoriteIcon, showFavoriteCard, hideFavoriteCard };
+export { toggleFavoriteIcon, showToggleFavoriteBtn, hideToggleFavoriteBtn, showFavoriteCard, hideFavoriteCard };
